@@ -3,10 +3,10 @@ import * as express from 'express';
 import todoRoutes from './todo.routes';
 import * as jwt from 'jsonwebtoken';
 import { config } from './config';
-import { applyMiddleware } from './middleware'; // เพิ่มบรรทัดนี้
+import { applyMiddleware } from './middleware'; // นำเข้า middleware ที่สร้างไว้
 
 const app = express();
-applyMiddleware(app); // เพิ่มบรรทัดนี้
+applyMiddleware(app); // ลืมใส่ตรงนี้ เลย test ไม่ผ่าน
 
 app.post('/api/v1/login', (req, res) => {
     const { username, password } = req.body;
