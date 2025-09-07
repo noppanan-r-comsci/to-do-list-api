@@ -1,7 +1,7 @@
-import * as express from 'express';
-import * as jwt from 'jsonwebtoken';
-import * as swaggerUi from 'swagger-ui-express';
-import * as swaggerJSDoc from 'swagger-jsdoc';
+import express from 'express';
+import jwt from 'jsonwebtoken';
+import swaggerUi from 'swagger-ui-express';
+import swaggerJSDoc from 'swagger-jsdoc';
 
 import { config } from './config';
 import { applyMiddleware } from './middleware';

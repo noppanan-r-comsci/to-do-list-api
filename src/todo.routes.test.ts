@@ -1,7 +1,7 @@
-import * as request from 'supertest';
-import * as express from 'express';
+import request from 'supertest';
+import express from 'express';
 import todoRoutes from './todo.routes';
-import * as jwt from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 import { config } from './config';
 import { applyMiddleware } from './middleware'; // นำเข้า middleware ที่สร้างไว้
 

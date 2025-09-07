@@ -1,12 +1,14 @@
 import helmet from 'helmet';
-import * as jwt from 'jsonwebtoken';
-import * as express from 'express';
+import jwt from 'jsonwebtoken';
+import express from 'express';
 import { Express } from 'express';
 import { config } from './config';
+import cors from 'cors';
 
 const jwtSecret = config.appSecret || '';
 
 export const applyMiddleware = (app: Express) => {
+    app.use(cors());
     app.use(helmet());
     app.use(express.json());
     
