@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# TypeScript build output
+dist/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Mac system files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Jest coverage
+coverage/
